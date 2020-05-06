@@ -1,0 +1,17 @@
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/global.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.xml
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.deps.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.runtimeconfig.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.runtimeconfig.dev.json
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.dll
+/Users/teontt/Projects/upload/NetCoreSpaceApi/bin/Debug/netcoreapp2.2/NetCoreSpaceApi.pdb
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.RazorAssemblyInfo.cache
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.RazorAssemblyInfo.cs
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.AssemblyInfoInputs.cache
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.AssemblyInfo.cs
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.RazorTargetAssemblyInfo.cache
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.dll
+/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.pdb
