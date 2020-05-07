@@ -37,5 +37,6 @@
     <Folder Include="Entities\Enum\" />
     <Folder Include="Data\" />
     <Folder Include="Data\Interfaces\" />
+    <Folder Include="DataBase\" />
   </ItemGroup>
 </Project>
