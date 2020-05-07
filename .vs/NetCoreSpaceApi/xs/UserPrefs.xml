@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{102B2CC5-885A-4239-B9B1-79C81E5C19A1}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/ApplicationContext.cs">
+    <Files>
+      <File FileName="Data/ApplicationContext.cs" Line="32" Column="27" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetCoreSpaceApi" expanded="True">
             <Node name="NetCoreSpaceApi" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="SdkDependencies" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationContext.cs" selected="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

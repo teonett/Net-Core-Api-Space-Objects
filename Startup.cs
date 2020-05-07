@@ -5,9 +5,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Models;
+using NetCoreSpaceApi.Data;
+using NetCoreSpaceApi.Data.Interfaces;
 
 namespace NetCoreSpaceApi
 {
@@ -46,9 +50,19 @@ namespace NetCoreSpaceApi
 
                 c.IncludeXmlComments(xmlPath);
             });
+
+            string connectionString = "Data Source=spaceObjects.db";
+            services.AddDbContext<ApplicationContext>(options =>
+            {
+                options.UseSqlite(connectionString);
+            });
+
+            services.AddTransient<IDataServices, DataServices>();
+
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -71,7 +85,7 @@ namespace NetCoreSpaceApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Exemplo Swagger - v1");
             });
 
-
+            serviceProvider.GetService<IDataServices>().StartDB();
         }
     }
 }
