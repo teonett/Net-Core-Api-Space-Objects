@@ -6,9 +6,6 @@ namespace NetCoreSpaceApi.Repositories.Entities
 {
     public class Planet : EntityBase
     {
-        public Planet()
-        {
-        }
 
         [Required]
         [Column(TypeName = "varchar(20)")]

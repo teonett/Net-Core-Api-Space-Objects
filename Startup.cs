@@ -12,6 +12,10 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Models;
 using NetCoreSpaceApi.Data;
 using NetCoreSpaceApi.Data.Interfaces;
+using NetCoreSpaceApi.Repositories;
+using NetCoreSpaceApi.Repositories.Interfaces;
+using NetCoreSpaceApi.Services;
+using NetCoreSpaceApi.Services.Interfaces;
 
 namespace NetCoreSpaceApi
 {
@@ -57,7 +61,10 @@ namespace NetCoreSpaceApi
                 options.UseSqlite(connectionString);
             });
 
+            services.AddTransient<IPlanetRepository, PlanetRepository>();
+
             services.AddTransient<IDataServices, DataServices>();
+            services.AddTransient<IPlanetService, PlanetService>();
 
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }

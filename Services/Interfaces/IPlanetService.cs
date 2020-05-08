@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using NetCoreSpaceApi.Repositories.Entities;
 
-namespace NetCoreSpaceApi.Repositories.Interfaces
+namespace NetCoreSpaceApi.Services.Interfaces
 {
-    public interface IPlanetRepository
+    public interface IPlanetService
     {
         List<Planet> GetAll();
 
         Planet GetId(int id);
-
     }
 }

@@ -11,5 +11,3 @@
 /Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.RazorTargetAssemblyInfo.cache
 /Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.dll
 /Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.pdb
-/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.csprojAssemblyReference.cache
-/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/Debug/netcoreapp2.2/NetCoreSpaceApi.csproj.CoreCompileInputs.cache

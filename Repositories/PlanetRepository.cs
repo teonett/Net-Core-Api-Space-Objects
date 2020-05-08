@@ -1,45 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using NetCoreSpaceApi.Data;
+using NetCoreSpaceApi.Repositories.Base;
 using NetCoreSpaceApi.Repositories.Entities;
 using NetCoreSpaceApi.Repositories.Interfaces;
 
 namespace NetCoreSpaceApi.Repositories
 {
-    public class PlanetRepository : IPlanetRepository
+    public class PlanetRepository : BaseRepository<Planet>, IPlanetRepository
     {
-        public PlanetRepository()
+        public PlanetRepository(ApplicationContext context) : base(context)
         {
         }
 
-        public Task Create(Planet planet)
+        public List<Planet> GetAll()
         {
-            throw new NotImplementedException();
+            var resultData = dbSet.ToList();
+            return resultData;
         }
 
-        public Task Delete(int id)
+        public Planet GetId(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task GetAll(List<Planet> planets)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task GetId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Import(List<Planet> planets)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(Planet planet)
-        {
-            throw new NotImplementedException();
+            var resultData = dbSet.ToList().Where(x => x.Id == id).FirstOrDefault();
+            return resultData;
         }
     }
 }

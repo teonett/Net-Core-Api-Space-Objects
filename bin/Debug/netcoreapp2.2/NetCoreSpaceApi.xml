@@ -4,5 +4,11 @@
         <name>NetCoreSpaceApi</name>
     </assembly>
     <members>
+        <member name="M:NetCoreSpaceApi.Controllers.PlanetController.Get">
+            <summary>
+            Get List Our Solar System Planets
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>
