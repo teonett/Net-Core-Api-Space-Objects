@@ -12736,11 +12736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/teontt/Projects/upload/NetCoreSpaceApi/NetCoreSpaceApi.csproj",
+      "projectUniqueName": "/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/NetCoreSpaceApi.csproj",
       "projectName": "NetCoreSpaceApi",
-      "projectPath": "/Users/teontt/Projects/upload/NetCoreSpaceApi/NetCoreSpaceApi.csproj",
+      "projectPath": "/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/NetCoreSpaceApi.csproj",
       "packagesPath": "/Users/teontt/.nuget/packages/",
-      "outputPath": "/Users/teontt/Projects/upload/NetCoreSpaceApi/obj/",
+      "outputPath": "/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using NetCoreSpaceApi.Repositories.Base;
 
 namespace NetCoreSpaceApi.Repositories.Entities
 {
-    public class Planet : EntityBase
+    public class Planet
     {
+        [Key]
+        public int Id { get; protected set; }
 
         [Required]
         [Column(TypeName = "varchar(20)")]
@@ -31,8 +32,9 @@ namespace NetCoreSpaceApi.Repositories.Entities
         [Required]
         public int Moons { get; private set; }
 
-        public Planet(string name, decimal diameterKm, string sizeRelative, string sunDistance, string massKg, int moons)
+        public Planet(int id, string name, decimal diameterKm, string sizeRelative, string sunDistance, string massKg, int moons)
         {
+            this.Id = id;
             this.Name = name;
             this.DiameterKm = diameterKm;
             this.SizeRelative = sizeRelative;

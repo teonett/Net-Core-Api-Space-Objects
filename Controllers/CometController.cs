@@ -8,30 +8,30 @@ namespace NetCoreSpaceApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PlanetController : Controller
+    public class CometController : Controller
     {
         private ApplicationContext Context { get; set; }
-        private readonly IPlanetService PlanetService; 
+        private readonly ICometService Service;
 
-        public PlanetController(ApplicationContext _context, IPlanetService planetService)
+        public CometController(ApplicationContext _context, ICometService comet)
         {
             this.Context = _context;
-            this.PlanetService = planetService;
+            this.Service = comet;
         }
 
         /// <summary>
-        /// Get List Our Solar System Planets
+        /// Get List All Known Comets
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public List<Planet> Get()
+        public List<Comet> Get()
         {
-            return PlanetService.GetAll();
+            return Service.GetAll();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Planet Get(int id)
+        public Comet Get(int id)
         {
             return null;
         }

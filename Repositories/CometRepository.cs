@@ -6,24 +6,24 @@ using NetCoreSpaceApi.Repositories.Interfaces;
 
 namespace NetCoreSpaceApi.Repositories
 {
-    public class PlanetRepository : IPlanetRepository
+    public class CometRepository : ICometRepository
     {
         private readonly ApplicationContext context;
 
-        public PlanetRepository(ApplicationContext _context) 
+        public CometRepository(ApplicationContext _context)
         {
             this.context = _context;
         }
 
-        public List<Planet> GetAll()
+        public List<Comet> GetAll()
         {
-            var resultData = context.Planet.ToList();
+            var resultData = context.Comet.ToList();
             return resultData;
         }
 
-        public Planet GetId(int id)
+        public Comet GetId(int id)
         {
-            var resultData = context.Planet.ToList().Where(x => x.Id == id).FirstOrDefault();
+            var resultData = context.Comet.ToList().Where(x => x.Id == id).FirstOrDefault();
             return resultData;
         }
     }

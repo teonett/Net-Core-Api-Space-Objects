@@ -1,14 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using NetCoreSpaceApi.Repositories.Base;
 
 namespace NetCoreSpaceApi.Repositories.Entities
 {
-    public class Comet : EntityBase
+    public class Comet
     {
-        public Comet()
-        {
-        }
+        [Key]
+        public int Id { get; protected set; }
 
         [Required]
         [Column(TypeName = "varchar(20)")]
@@ -18,8 +16,9 @@ namespace NetCoreSpaceApi.Repositories.Entities
         [Column(TypeName = "varchar(20)")]
         public string Designation { get; private set; }
 
-        public Comet(string name, string designation)
+        public Comet(int id, string name, string designation)
         {
+            this.Id = id;
             this.Name = name;
             this.Designation = designation;
         }

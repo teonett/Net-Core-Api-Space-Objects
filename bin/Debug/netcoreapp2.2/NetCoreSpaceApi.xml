@@ -4,6 +4,12 @@
         <name>NetCoreSpaceApi</name>
     </assembly>
     <members>
+        <member name="M:NetCoreSpaceApi.Controllers.CometController.Get">
+            <summary>
+            Get List All Known Comets
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:NetCoreSpaceApi.Controllers.PlanetController.Get">
             <summary>
             Get List Our Solar System Planets
