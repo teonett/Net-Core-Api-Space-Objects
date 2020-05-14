@@ -5,8 +5,14 @@
         <State name="__root__">
           <Node name="NetCoreSpaceApi" expanded="True">
             <Node name="NetCoreSpaceApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="GalaxyRepository.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -17,12 +23,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/Data/ApplicationContext.cs" relfile="Data/ApplicationContext.cs" line="25" column="36" />
-      <Breakpoint file="/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/Repositories/Entities/Planet.cs" relfile="Repositories/Entities/Planet.cs" line="13" column="15" />
-      <Breakpoint file="/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/Repositories/Base/BaseRepository.cs" relfile="Repositories/Base/BaseRepository.cs" line="14" column="29" />
-      <Breakpoint file="/Users/teontt/Projects/upload/Net-Core-Api-Space-Objects/Repositories/Base/EntityBase.cs" relfile="Repositories/Base/EntityBase.cs" line="11" column="20" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

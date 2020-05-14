@@ -63,11 +63,13 @@ namespace NetCoreSpaceApi
 
             services.AddTransient<IPlanetRepository, PlanetRepository>();
             services.AddTransient<ICometRepository, CometRepository>();
+            services.AddTransient<IConstelationRepository, ConstelationRepository>();
 
             services.AddTransient<IDataServices, DataServices>();
 
             services.AddTransient<IPlanetService, PlanetService>();
             services.AddTransient<ICometService, CometService>();
+            services.AddTransient<IConstelationService, ConstelationService>();
 
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }

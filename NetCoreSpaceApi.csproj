@@ -32,9 +32,6 @@
     <Folder Include="Repositories\Base\" />
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Repositories\Entities\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Entities\Base\" />
-    <Folder Include="Entities\Enum\" />
     <Folder Include="Data\" />
     <Folder Include="Data\Interfaces\" />
     <Folder Include="DataBase\" />
