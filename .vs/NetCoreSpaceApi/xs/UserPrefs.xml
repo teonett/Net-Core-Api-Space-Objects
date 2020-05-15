@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{102B2CC5-885A-4239-B9B1-79C81E5C19A1}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Repositories/CometRepository.cs">
+    <Files>
+      <File FileName="Controllers/ExoplanetController.cs" Line="10" Column="18" />
+      <File FileName="Repositories/CometRepository.cs" Line="21" Column="31" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NetCoreSpaceApi" expanded="True">
             <Node name="NetCoreSpaceApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Repositories" expanded="True">
-                <Node name="GalaxyRepository.cs" selected="True" />
+                <Node name="CometRepository.cs" selected="True" />
               </Node>
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />

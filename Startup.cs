@@ -45,7 +45,7 @@ namespace NetCoreSpaceApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Api Exemplo Swagger",
+                    Title = "Api Sky Objects",
                     Version = "v1"
                 });
 
@@ -64,12 +64,21 @@ namespace NetCoreSpaceApi
             services.AddTransient<IPlanetRepository, PlanetRepository>();
             services.AddTransient<ICometRepository, CometRepository>();
             services.AddTransient<IConstelationRepository, ConstelationRepository>();
+            services.AddTransient<IExoplanetRepository, ExoplanetRepository>();
+            services.AddTransient<IGalaxyRepository, GalaxyRepository>();
+            services.AddTransient<IMoonRepository, MoonRepository>();
+            services.AddTransient<IStarRepository, StarRepository>();
 
             services.AddTransient<IDataServices, DataServices>();
 
             services.AddTransient<IPlanetService, PlanetService>();
             services.AddTransient<ICometService, CometService>();
             services.AddTransient<IConstelationService, ConstelationService>();
+            services.AddTransient<IExoplanetService, ExoplanetService>();
+            services.AddTransient<IGalaxyService, GalaxyService>();
+            services.AddTransient<IMoonService, MoonService>();
+            services.AddTransient<IStarService, StarService>();
+
 
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
